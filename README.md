@@ -1,2 +1,5 @@
-# Robotics-Map_Localization
-Self Driving and ROS 2 - Map &amp; Localization course
+# Self Driving and ROS 2 - Odometry & Control
+
+
+Goal - Develop an intelligent self-driving system.
+Study the motion of self-driving robot and implement the equations that allows the robot to translate some given velocity commands by using a joystick into will-controlled commands. This branch is called Differential Kinematics. Differential Kinematics is the foundation of all the movements that the robot is capable of doing. Next we will address the inverse problem of differential kinematics. Based on the information coming from the encoder sensors that measure the rotation of thw wheels, we will try to estimate the overall motion of the robot. This field of study is called Odometry computation. It is essential for knowing the position of the robots movements during its movements. Then we will see how to improve the robot's Odometry and thus provide more accurate estimate of the robot's movement. And also to learn more about robots movement by fusing data from multiple sensors like encoders, accelerometers and gyroscopes. This is Sensor Fusion. Address the problem of sensor noise and implement a Kalman filter to limit the effect of noise.
