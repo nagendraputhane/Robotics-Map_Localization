@@ -1,5 +1,31 @@
 # Self Driving and ROS 2 - Odometry & Control
 
 
-Goal - Develop an intelligent self-driving system.
-Study the motion of self-driving robot and implement the equations that allows the robot to translate some given velocity commands by using a joystick into well controlled commands. This branch is called Differential Kinematics. Differential Kinematics is the foundation of all the movements that the robot is capable of doing. Next we will address the inverse problem of differential kinematics, ie., based on the information coming from the encoder sensors (motion sensor that create a digital signal from a motion) that measure the rotation of the wheels, we will try to estimate the overall motion of the robot. This field of study is called Odometry computation. It is essential for knowing the position of the robots movements during its movements. Then we will see how to improve the robot's Odometry and thus provide more accurate estimate of the robot's movement. And also to learn more about robots movement by fusing data from multiple sensors like encoders, accelerometers and gyroscopes. This is Sensor Fusion. Address the problem of sensor noise and implement a Kalman filter to limit the effect of noise.
+# Intelligent Self-Driving System Development
+
+## 🚀 Goal
+Develop an intelligent self-driving system for a robot by implementing core concepts in motion control, odometry computation, and sensor fusion.
+
+---
+
+## 📌 Objectives and Study Areas
+
+### 1. Differential Kinematics
+- **Objective:** Study the motion of a self-driving robot.
+- **Implementation:** Develop equations to translate joystick velocity commands into well-controlled motion commands.
+- **Significance:** Differential kinematics is the foundation for all robotic movements and is essential for executing precise maneuvers.
+
+### 2. Odometry Computation
+- **Objective:** Estimate the robot's motion using feedback from sensors.
+- **Implementation:** Use data from encoder sensors (which convert wheel rotation into digital signals) to calculate the robot's overall movement.
+- **Significance:** Odometry is crucial for tracking the robot's position during its movements.
+
+### 3. Sensor Fusion
+- **Objective:** Improve the robot's odometry and movement accuracy.
+- **Implementation:**
+  - Fuse data from multiple sensors, including encoders, accelerometers, and gyroscopes.
+  - Address the issue of sensor noise, which can reduce accuracy.
+  - Implement a **Kalman Filter** to mitigate the effects of sensor noise and enhance motion estimation.
+- **Significance:** Sensor fusion provides more reliable and accurate positioning by combining multiple data sources.
+
+🤖
