@@ -1,40 +1,84 @@
-Locomotion
-Legged, Aerial, Wheel.
-Type of locomotion depends on type of the application and on its requirements.
-Each has its upsides and downsides for the speed they provide and the unit power (hp/ton) they use.
+## 1. Locomotion Types
 
-In this course we focus on wheeled locomotion - the differential locomotion architure particularly.
-Differential locomotion / differential drive - consists of two drive wheels that are operated independently by two separate motors.
-Caster wheels are also added to keep the robot stable and supporting the robot system.
-Other tow types of drive are - Ackerman drive and omnidirectional drive.
-In differential drive configuration, by controlling the speed and the direction of the rotation of the two motors, it is able to achieve translational and rotational movements arounf the robot axis.
-By combining these rotational and translational movements, a differential robot can reach any point in the bi-directional space and it can reach it with any orientation.
-In ackerman drive, they can be front-wheel drive, or read-wheel drive or four-wheel drive. In this architecture, only the front wheels are steerable. Thus, unlike differential drive, the ackerman drive can not rotate on itself.
-Omnidirectional drive - all the wheels that are 3 or 4, are separately driven by different robots and by controlling the speed and the direction of the rotation of each motor, this can perform any movement in any direction and orientation.
-For any architecture, the task consists of controlling the speed and the direction of one or more motors in order to achieve a desired pose.
-Such a pose is defined by three parameters - that are the position of the robot defined by its X and Y co-ordinated and its orientation defined by the angle θ.
-State space (x, y, θ) -> uniquely defines the robots pose in a particular moment in time in the bi directional space.
+### Overview
+- **Legged, Aerial, Wheeled:**  
+  The type of locomotion is chosen based on application requirements. Each method has its trade-offs in speed and power efficiency (e.g., horsepower per ton).
 
-Friction effects:
-Example: In ideal case where neither wheel nor the floor deforms, and it is in vaccum and there isno dissipation, and there is only one point of intersection between the wheel and floor, and this point is the point P. The force F that produces a rotation of the wheel with angular velocity W would produce a constant motion of wheel without ever decelerating. In the real case, the wheel is subjected to deformation. This deformation depends on the wheight of the vehicle and the material of the wheel. If we apply a force Fon the wheel and it will start rotating with angular velocity W, and the contact point is a surface S. The contact surface with the ground can be compared to the compression of a spring, so that we can treat the wheel as many small springs that deforms. When the wheel moves, the contact surface will also change - S1. Lets plot the graph in which we represent the process of compression and decompression of spring, and thus the force required to obtain a compression of the spring. Ideal case - spring compreesing and decompressing without any losses, in this case, by increasing the force applied to the spring, we also increase linearly the compression of the spring itself and thus its deformation. The area of the surface below this curve is proportional to the product between the force applied to the spring and the corresponding compression (please elaborate the physics part more). This represents the work that is required in order to deform the spring by a certain amount. This energy however is not lost. It is mechanical energy that is then released when the compression force is removed. Thus the area under the curve is the product of Force applied to the spring and the change in its dimensions, and so represents the work performed by the spring in order to return to its initial configuration. (please elaborate more). In the real world that represents the compression of a spring is a parabola. This says, initially a small force is enough to get an initial compression of the spring, but then, once the spring is compressed, a large force must be applied to get a small increment in its compression. Again, the area under the curve represents the work that must be done to achieve such a compression of the spring ( what is this area and what is this work?). During the decompression process, we have to consider the losses. Small part of the energy we use to compress the spring is converted into it and another part is converted into a small permanent deformation of the spring. The surface of area between the compression parabola and the decompression parabola represents the losses. This is called rolling friction. The larger the area is, the larger the losses are. Let's now consider a case of the wheeled locomotion on a soft ground such as sand. n this case, both the wheel and the ground are deformed. We also leave footprints. That is, we permanently deform the surface that we have stepped on. Let's still assume to apply a force F to the wheel which begins to rotate with an angular velocity W. Again, since we are considering a real wheel, it will be deformed during the motion so we can still think of it as composed of many small springs that compress and decompress when they come in contact with the ground. However, since the wheel is rotating on the sand, also the ground can be thought as composed of many small springs that compress below the wheel. The only difference is that these small springs do not return to their initial shape, but they remain deformed permanently. Again, we can plot the force required to obtain a compression and still also in this case, the compression phase of the spring doesn't change and we still have a parabola that tells us that in order to get an initial compression, we just need a small force to be applied to the spring. Instead. In order to get a small final compression, we need to apply a big force. As you already know, the area below this curve represents the energy needed to compress the spring. However, in this case of wheeled locomotion on sand, after the wheel passes through the sand, it remains deformed. And so the sand springs of the ground are compressed and remain compressed. There isn't a decompression phase that follows the compression one. This means that the energy spent on the compression of the springs is dissipated or better. It is used to permanently deform the ground. No fraction of this energy is recovered because the ground springs do not have a decompression phase. And this is why the wheeled locomotion on the soft grounds is so inefficient.
+### Wheeled Locomotion
+- **Differential Drive:**  
+  - Consists of two independently driven wheels (each powered by its own motor).  
+  - Typically includes one or more caster wheels for stability.  
+  - By controlling the speed and rotation direction of each wheel, the robot can achieve both translational and rotational movements.  
+  - This configuration allows the robot to reach any point in the 2D plane with any desired orientation.
 
-Robot Description:
-It is possible in Ros 2 to model a robot, that is, to define the structure of the robot components and how they are connected and interact with each other. Also, by creating a model of the robot, one can also decide to simulate it within a physics engine. Helpful for Debugging a robotic application. Model a Robot -> Visualize it -> Simulate -> Debug -> repeat.
+- **Ackermann Drive:**  
+  - Common in vehicles; can be front-wheel, rear-wheel, or four-wheel drive.  
+  - Only the front wheels are steerable, meaning the vehicle cannot rotate in place.
 
-URDF:
-First step is always to define the structure/model of the robot and define how all the different components are connected together and also associate some properties to the components. ROS 2 used URDF convention through XML tags.
-URDF - Unified Robot Description Format.
-1. <robot> </robot>
-2. <link> - represents any component of the robot. Creates a reference frame with some properties. A link can have a name, physical dimension - a mesh / 3D model associated with it.
-    1. <visual> - used for visualization of the mesh
-    2. <collision> and <inertial> - assign physical properties to the link. These tags will be used by the physics engine to simulate the robot and its interaction.
-3. <joint> - within the join tag, we should specify the two links that are connected together. And this connection is made following a tree like structure. e.g., a joint that connects two links always has a parent - which in this case is a base_footprint (base_footprint = link that represents the robots contact area with the ground) and also a child - which in this case is the base_link. Each link can only be connected to one parent, meanwhile each parent can have multiple childs connected to it.
-    1. type of the connection - fixed, movable (rotation axis + limits)
+- **Omnidirectional Drive:**  
+  - Utilizes three or four independently driven wheels.  
+  - With independent control of each wheel, the robot can move in any direction and rotate simultaneously.
 
+**Note:** In any locomotion architecture, the goal is to control motor speed and direction to achieve a desired pose defined by position (X, Y) and orientation (θ).
 
-RViz 2:
-We have now modeled the robot. Next we would like to Visualize it - using ROS Visualization tool. Used to visualize ROS 2 messages that published on some topics.
-It uses pub-sub communication protocol. Whenever a new message is published on a topic, the subscriber receives it, interprets it, and based on the message type, it displays it within the GUI. RViz provides many plugins like, to visualize a map, visualize sensor data, visualize video streaming data, etc..
+---
 
-Parameters:
-There are many softwares available in ROS2 for different functionalities. As these are general purpose software, they provide Parameters, that we can fine tune to fit for our purpose.
+## 2. Friction and Deformation Effects
+
+### Ideal vs. Real-World Behavior
+- **Ideal Case:**  
+  - No deformation of the wheel or the floor.  
+  - Operating in a vacuum with no energy dissipation.  
+  - A single point of contact (P) means that a constant force (F) produces rotation with a constant angular velocity (ω) without deceleration.
+
+- **Real-World Conditions:**  
+  - **Deformation:** Both the wheel and the ground deform under load. This deformation can be modeled as many small springs.
+  - **Force–Compression Relationship:**  
+    - In an ideal elastic spring, force increases linearly with compression, and the work done (the area under the force vs. displacement curve) is fully recoverable.  
+    - In reality, the relationship is nonlinear (often parabolic): initially, a small force compresses the material, but further compression requires disproportionately higher force.
+  - **Energy Loss (Hysteresis and Rolling Friction):**  
+    - The area between the compression and decompression curves represents energy lost due to hysteresis.  
+    - This lost energy is converted into heat or causes permanent deformation.  
+    - **On Soft Grounds (e.g., sand):**  
+      - Both the wheel and the ground deform.  
+      - The ground’s "spring" elements do not fully recover their shape, so the energy used for compression is not recovered, resulting in significant inefficiency.
+
+---
+
+## 3. Robot Modeling in ROS 2
+
+### Workflow Overview
+1. **Model the Robot:**  
+   Define the structure, components, and their interconnections.
+2. **Visualize the Model:**  
+   Use tools to display the robot's structure.
+3. **Simulate the Behavior:**  
+   Run the model in a physics engine to test interactions.
+4. **Debug and Iterate:**  
+   Refine the model and control strategies based on simulation results.
+
+### URDF (Unified Robot Description Format)
+- **Purpose:**  
+  Defines the robot’s structure using XML.
+- **Key Elements:**
+  - `<robot> ... </robot>`: Root element.
+  - `<link>`: Represents a component of the robot, establishing its reference frame and properties.  
+    - **Sub-elements:**  
+      - `<visual>`: Defines the appearance (e.g., mesh or 3D model).  
+      - `<collision>` and `<inertial>`: Specify physical properties for simulation.
+  - `<joint>`: Connects two links in a tree-like structure.  
+    - Each joint specifies a parent link (e.g., `base_footprint`, representing the contact area with the ground) and a child link (e.g., `base_link`).  
+    - Joint types include **fixed** or **movable** (with defined rotation axes and limits).
+
+### RViz 2
+- **Purpose:**  
+  A visualization tool for ROS 2.
+- **Functionality:**  
+  - Displays messages published on ROS topics in real time.  
+  - Supports plugins to visualize maps, sensor data, video streams, and more using a publisher-subscriber model.
+
+### Parameters in ROS 2
+- ROS 2 packages often expose parameters to fine-tune software behavior.  
+- Adjusting these parameters allows the system to be optimized for specific applications.
+
+---
