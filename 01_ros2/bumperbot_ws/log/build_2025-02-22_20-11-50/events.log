@@ -1,0 +1,208 @@
+[0.000000] (-) TimerEvent: {}
+[0.000368] (bumperbot_cpp_examples) JobQueued: {'identifier': 'bumperbot_cpp_examples', 'dependencies': OrderedDict()}
+[0.000432] (bumperbot_py_examples) JobQueued: {'identifier': 'bumperbot_py_examples', 'dependencies': OrderedDict()}
+[0.000492] (bumperbot_cpp_examples) JobStarted: {'identifier': 'bumperbot_cpp_examples'}
+[0.006313] (bumperbot_py_examples) JobStarted: {'identifier': 'bumperbot_py_examples'}
+[0.017193] (bumperbot_cpp_examples) JobProgress: {'identifier': 'bumperbot_cpp_examples', 'progress': 'cmake'}
+[0.018944] (bumperbot_cpp_examples) JobProgress: {'identifier': 'bumperbot_cpp_examples', 'progress': 'build'}
+[0.019326] (bumperbot_cpp_examples) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples', '--', '-j8', '-l8'], 'cwd': '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'sdn'), ('SSH_AGENT_PID', '2765'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/sdn'), ('OLDPWD', '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2594'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1005/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '96266'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'sdn'), ('JOURNAL_STREAM', '8:46903'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sdn'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/sdn/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/lakshmi-VivoBook-ASUSLaptop-X412FJC-X412FJ:@/tmp/.ICE-unix/2815,unix/lakshmi-VivoBook-ASUSLaptop-X412FJC-X412FJ:/tmp/.ICE-unix/2815'), ('INVOCATION_ID', '9c1868925318440085d4c1f1fb86168d'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1005'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1005/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1005/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c8002047-5f91-4c41-bb3e-5b2a316df4cb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1005/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.099496] (-) TimerEvent: {}
+[0.199859] (-) TimerEvent: {}
+[0.289630] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.290230] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.290749] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[0.291582] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.292266] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[0.300048] (-) TimerEvent: {}
+[0.310555] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.379152] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[0.382251] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.400152] (-) TimerEvent: {}
+[0.405757] (bumperbot_cpp_examples) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.500233] (-) TimerEvent: {}
+[0.568190] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[0.600360] (-) TimerEvent: {}
+[0.633793] (bumperbot_cpp_examples) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.634728] (bumperbot_cpp_examples) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.634985] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.635123] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.635712] (bumperbot_cpp_examples) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.635864] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.636388] (bumperbot_cpp_examples) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.637201] (bumperbot_cpp_examples) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.637355] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.637651] (bumperbot_cpp_examples) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.639846] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.651109] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Generating done\n'}
+[0.656321] (bumperbot_cpp_examples) StdoutLine: {'line': b'-- Build files have been written to: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples\n'}
+[0.683258] (bumperbot_cpp_examples) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target simple_subscriber\x1b[0m\n'}
+[0.684469] (bumperbot_cpp_examples) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target simple_publisher\x1b[0m\n'}
+[0.700471] (-) TimerEvent: {}
+[0.714512] (bumperbot_cpp_examples) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o\x1b[0m\n'}
+[0.720248] (bumperbot_cpp_examples) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o\x1b[0m\n'}
+[0.736423] (bumperbot_py_examples) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/bumperbot_py_examples', 'build', '--build-base', '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_py_examples/build', 'install', '--record', '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_py_examples/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_py_examples', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'sdn', 'SSH_AGENT_PID': '2765', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/sdn', 'OLDPWD': '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2594', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1005/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '96266', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'sdn', 'JOURNAL_STREAM': '8:46903', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sdn', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/sdn/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/lakshmi-VivoBook-ASUSLaptop-X412FJC-X412FJ:@/tmp/.ICE-unix/2815,unix/lakshmi-VivoBook-ASUSLaptop-X412FJC-X412FJ:/tmp/.ICE-unix/2815', 'INVOCATION_ID': '9c1868925318440085d4c1f1fb86168d', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1005', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_IN', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1005/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1005/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:c8002047-5f91-4c41-bb3e-5b2a316df4cb', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1005/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_py_examples', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_py_examples/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.800597] (-) TimerEvent: {}
+[0.900935] (-) TimerEvent: {}
+[0.994121] (bumperbot_py_examples) StdoutLine: {'line': b'running egg_info\n'}
+[0.994922] (bumperbot_py_examples) StdoutLine: {'line': b'writing ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/PKG-INFO\n'}
+[0.995187] (bumperbot_py_examples) StdoutLine: {'line': b'writing dependency_links to ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/dependency_links.txt\n'}
+[0.995383] (bumperbot_py_examples) StdoutLine: {'line': b'writing entry points to ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/entry_points.txt\n'}
+[0.995570] (bumperbot_py_examples) StdoutLine: {'line': b'writing requirements to ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/requires.txt\n'}
+[0.995706] (bumperbot_py_examples) StdoutLine: {'line': b'writing top-level names to ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/top_level.txt\n'}
+[1.001029] (-) TimerEvent: {}
+[1.033069] (bumperbot_py_examples) StdoutLine: {'line': b"reading manifest file '../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/SOURCES.txt'\n"}
+[1.034092] (bumperbot_py_examples) StdoutLine: {'line': b"writing manifest file '../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info/SOURCES.txt'\n"}
+[1.034365] (bumperbot_py_examples) StdoutLine: {'line': b'running build\n'}
+[1.034516] (bumperbot_py_examples) StdoutLine: {'line': b'running build_py\n'}
+[1.034671] (bumperbot_py_examples) StdoutLine: {'line': b'running install\n'}
+[1.035760] (bumperbot_py_examples) StdoutLine: {'line': b'running install_lib\n'}
+[1.037765] (bumperbot_py_examples) StdoutLine: {'line': b'running install_data\n'}
+[1.038029] (bumperbot_py_examples) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.040239] (bumperbot_py_examples) StdoutLine: {'line': b"removing '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_py_examples/lib/python3.8/site-packages/bumperbot_py_examples-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[1.040922] (bumperbot_py_examples) StdoutLine: {'line': b'Copying ../../build/bumperbot_py_examples/bumperbot_py_examples.egg-info to /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_py_examples/lib/python3.8/site-packages/bumperbot_py_examples-0.0.0-py3.8.egg-info\n'}
+[1.041897] (bumperbot_py_examples) StdoutLine: {'line': b'running install_scripts\n'}
+[1.068109] (bumperbot_py_examples) StdoutLine: {'line': b"writing list of installed files to '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_py_examples/install.log'\n"}
+[1.100896] (bumperbot_py_examples) CommandEnded: {'returncode': 0}
+[1.101260] (-) TimerEvent: {}
+[1.114976] (bumperbot_py_examples) JobEnded: {'identifier': 'bumperbot_py_examples', 'rc': 0}
+[1.201408] (-) TimerEvent: {}
+[1.301729] (-) TimerEvent: {}
+[1.402028] (-) TimerEvent: {}
+[1.502323] (-) TimerEvent: {}
+[1.602637] (-) TimerEvent: {}
+[1.702947] (-) TimerEvent: {}
+[1.803270] (-) TimerEvent: {}
+[1.903614] (-) TimerEvent: {}
+[2.003949] (-) TimerEvent: {}
+[2.104237] (-) TimerEvent: {}
+[2.204546] (-) TimerEvent: {}
+[2.304848] (-) TimerEvent: {}
+[2.405147] (-) TimerEvent: {}
+[2.499849] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:8:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemporary of non-literal type \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 in a constant expression\n'}
+[2.500130] (bumperbot_cpp_examples) StderrLine: {'line': b'    8 |         SimpleSubscriber : \x1b[01;31m\x1b[KNode("simple_subscriber")\x1b[m\x1b[K {\n'}
+[2.500215] (bumperbot_cpp_examples) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.500284] (bumperbot_cpp_examples) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.500351] (bumperbot_cpp_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.500415] (bumperbot_cpp_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[2.500478] (bumperbot_cpp_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:1\x1b[m\x1b[K:\n'}
+[2.500542] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:77:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 is not literal because:\n'}
+[2.500607] (bumperbot_cpp_examples) StderrLine: {'line': b'   77 | class \x1b[01;36m\x1b[KNode\x1b[m\x1b[K : public std::enable_shared_from_this<Node>\n'}
+[2.500669] (bumperbot_cpp_examples) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.500731] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:77:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has a non-trivial destructor\n'}
+[2.500807] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:8:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault member initializer for unnamed bit-field\n'}
+[2.500882] (bumperbot_cpp_examples) StderrLine: {'line': b'    8 |         SimpleSubscriber : Node("simple_subscriber") \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[2.500946] (bumperbot_cpp_examples) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.501016] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:17:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kname \xe2\x80\x98\x1b[01m\x1b[KSimpleSubscriber\x1b[m\x1b[K\xe2\x80\x99 has incomplete type\n'}
+[2.501085] (bumperbot_cpp_examples) StderrLine: {'line': b'   17 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[2.501147] (bumperbot_cpp_examples) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.501208] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:19:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconflicting declaration \xe2\x80\x98\x1b[01m\x1b[Kchar** argc\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.501272] (bumperbot_cpp_examples) StderrLine: {'line': b'   19 | int main(int argc, \x1b[01;31m\x1b[Kchar* argc[]\x1b[m\x1b[K) {\n'}
+[2.501335] (bumperbot_cpp_examples) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[2.501397] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:19:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration as \xe2\x80\x98\x1b[01m\x1b[Kint argc\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.501467] (bumperbot_cpp_examples) StderrLine: {'line': b'   19 | int main(\x1b[01;36m\x1b[Kint argc\x1b[m\x1b[K, char* argc[]) {\n'}
+[2.501529] (bumperbot_cpp_examples) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[2.501594] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:25:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[2.501743] (bumperbot_cpp_examples) StderrLine: {'line': b'   25 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[2.501808] (bumperbot_cpp_examples) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.501871] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:6:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.501935] (bumperbot_cpp_examples) StderrLine: {'line': b'    6 | class SimpleSubscriber : rclcpp::Node \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[2.501997] (bumperbot_cpp_examples) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.502058] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint SimpleSubscriber::main(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.502121] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:20:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.502185] (bumperbot_cpp_examples) StderrLine: {'line': b'   20 |     rclcpp::init(argc, \x1b[01;31m\x1b[Kargv\x1b[m\x1b[K);\n'}
+[2.502247] (bumperbot_cpp_examples) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.502309] (bumperbot_cpp_examples) StderrLine: {'line': b'      |                        \x1b[32m\x1b[Kargc\x1b[m\x1b[K\n'}
+[2.505025] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:22:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kspin(std::shared_ptr<SimpleSubscriber>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.505273] (-) TimerEvent: {}
+[2.505375] (bumperbot_cpp_examples) StderrLine: {'line': b'   22 |     rclcpp::spin(node\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.505485] (bumperbot_cpp_examples) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.505555] (bumperbot_cpp_examples) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[2.505626] (bumperbot_cpp_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:1\x1b[m\x1b[K:\n'}
+[2.505691] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:45:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.505757] (bumperbot_cpp_examples) StderrLine: {'line': b'   45 | \x1b[01;36m\x1b[Kspin\x1b[m\x1b[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);\n'}
+[2.505821] (bumperbot_cpp_examples) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.505883] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:45:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[KSimpleSubscriber\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[Krclcpp::node_interfaces::NodeBaseInterface\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.505951] (bumperbot_cpp_examples) StderrLine: {'line': b'   45 | spin(\x1b[01;36m\x1b[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr\x1b[m\x1b[K);\n'}
+[2.506016] (bumperbot_cpp_examples) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[2.506080] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:49:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::spin(rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.506144] (bumperbot_cpp_examples) StderrLine: {'line': b'   49 | \x1b[01;36m\x1b[Kspin\x1b[m\x1b[K(rclcpp::Node::SharedPtr node_ptr);\n'}
+[2.506208] (bumperbot_cpp_examples) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.506269] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:49:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[KSimpleSubscriber\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[Krclcpp::Node\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.506339] (bumperbot_cpp_examples) StderrLine: {'line': b'   49 | spin(\x1b[01;36m\x1b[Krclcpp::Node::SharedPtr node_ptr\x1b[m\x1b[K);\n'}
+[2.506421] (bumperbot_cpp_examples) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[2.506524] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.506632] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:25:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[2.506735] (bumperbot_cpp_examples) StderrLine: {'line': b'   25 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[2.506838] (bumperbot_cpp_examples) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.605420] (-) TimerEvent: {}
+[2.705723] (-) TimerEvent: {}
+[2.806065] (-) TimerEvent: {}
+[2.906429] (-) TimerEvent: {}
+[3.006820] (-) TimerEvent: {}
+[3.107151] (-) TimerEvent: {}
+[3.131757] (bumperbot_cpp_examples) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[3.131992] (bumperbot_cpp_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[3.132085] (bumperbot_cpp_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:63\x1b[m\x1b[K,\n'}
+[3.132155] (bumperbot_cpp_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:154\x1b[m\x1b[K,\n'}
+[3.132222] (bumperbot_cpp_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:1\x1b[m\x1b[K:\n'}
+[3.132288] (bumperbot_cpp_examples) StderrLine: {'line': b'/usr/include/c++/9/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = SimpleSubscriber; _Args = {}; _Tp = SimpleSubscriber]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.132356] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/alloc_traits.h:483:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = SimpleSubscriber; _Args = {}; _Tp = SimpleSubscriber; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<SimpleSubscriber>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.132424] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = SimpleSubscriber; _Alloc = std::allocator<SimpleSubscriber>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.132489] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = SimpleSubscriber; _Alloc = std::allocator<SimpleSubscriber>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.132555] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<SimpleSubscriber>; _Args = {}; _Tp = SimpleSubscriber; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.132626] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:359:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<SimpleSubscriber>; _Args = {}; _Tp = SimpleSubscriber]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.132690] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:701:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = SimpleSubscriber; _Alloc = std::allocator<SimpleSubscriber>; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.132754] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:717:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = SimpleSubscriber; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.132818] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:21:52:\x1b[m\x1b[K   required from here\n'}
+[3.132905] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ext/new_allocator.h:146:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KSimpleSubscriber::SimpleSubscriber()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.133016] (bumperbot_cpp_examples) StderrLine: {'line': b'  146 |  { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[3.133139] (bumperbot_cpp_examples) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.133254] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:6:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSimpleSubscriber::SimpleSubscriber()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[3.133371] (bumperbot_cpp_examples) StderrLine: {'line': b'    6 | class \x1b[01;36m\x1b[KSimpleSubscriber\x1b[m\x1b[K : rclcpp::Node {\n'}
+[3.133486] (bumperbot_cpp_examples) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.133595] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:6:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.133698] (bumperbot_cpp_examples) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[3.133808] (bumperbot_cpp_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[3.133894] (bumperbot_cpp_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[3.133962] (bumperbot_cpp_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:1\x1b[m\x1b[K:\n'}
+[3.134038] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:1302:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.134103] (bumperbot_cpp_examples) StderrLine: {'line': b' 1302 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[3.134166] (bumperbot_cpp_examples) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.134229] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:1302:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[3.134324] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.134409] (bumperbot_cpp_examples) StderrLine: {'line': b'  101 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[3.134475] (bumperbot_cpp_examples) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.134539] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[3.134603] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.134679] (bumperbot_cpp_examples) StderrLine: {'line': b'   89 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[3.134742] (bumperbot_cpp_examples) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.134804] (bumperbot_cpp_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[3.205696] (bumperbot_cpp_examples) StderrLine: {'line': b'make[2]: *** [CMakeFiles/simple_subscriber.dir/build.make:63: CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o] Error 1\n'}
+[3.205912] (bumperbot_cpp_examples) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/simple_subscriber.dir/all] Error 2\n'}
+[3.205996] (bumperbot_cpp_examples) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[3.207268] (-) TimerEvent: {}
+[3.307565] (-) TimerEvent: {}
+[3.407857] (-) TimerEvent: {}
+[3.508111] (-) TimerEvent: {}
+[3.608433] (-) TimerEvent: {}
+[3.708786] (-) TimerEvent: {}
+[3.809190] (-) TimerEvent: {}
+[3.909663] (-) TimerEvent: {}
+[4.010179] (-) TimerEvent: {}
+[4.110794] (-) TimerEvent: {}
+[4.211107] (-) TimerEvent: {}
+[4.311424] (-) TimerEvent: {}
+[4.411722] (-) TimerEvent: {}
+[4.512006] (-) TimerEvent: {}
+[4.612289] (-) TimerEvent: {}
+[4.712593] (-) TimerEvent: {}
+[4.812914] (-) TimerEvent: {}
+[4.913238] (-) TimerEvent: {}
+[4.934097] (bumperbot_cpp_examples) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable simple_publisher\x1b[0m\n'}
+[5.013373] (-) TimerEvent: {}
+[5.113680] (-) TimerEvent: {}
+[5.127886] (bumperbot_cpp_examples) StdoutLine: {'line': b'[ 75%] Built target simple_publisher\n'}
+[5.129244] (bumperbot_cpp_examples) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[5.131136] (bumperbot_cpp_examples) CommandEnded: {'returncode': 2}
+[5.137589] (bumperbot_cpp_examples) JobEnded: {'identifier': 'bumperbot_cpp_examples', 'rc': 2}
+[5.148287] (-) EventReactorShutdown: {}

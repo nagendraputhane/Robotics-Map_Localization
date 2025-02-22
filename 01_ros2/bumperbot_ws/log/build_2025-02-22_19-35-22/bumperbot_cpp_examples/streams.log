@@ -1,0 +1,34 @@
+[0.078s] Invoking command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples -- -j8 -l8
+[0.394s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.394s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.394s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.441s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.445s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.624s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.689s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.692s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.714s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.901s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[0.979s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.980s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.980s] -- Configured cppcheck include dirs: 
+[0.980s] -- Configured cppcheck exclude dirs and/or files: 
+[0.981s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.981s] -- Configured cpplint exclude dirs and/or files: 
+[0.981s] -- Added test 'lint_cmake' to check CMake code style
+[0.982s] -- Added test 'uncrustify' to check C / C++ code style
+[0.982s] -- Configured uncrustify additional arguments: 
+[0.983s] -- Added test 'xmllint' to check XML markup files
+[0.985s] -- Configuring done
+[1.076s] -- Generating done
+[1.079s] -- Build files have been written to: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples
+[1.126s] [35m[1mScanning dependencies of target simple_publisher[0m
+[1.183s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o[0m
+[1.455s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:3:9:[m[K [01;31m[Kfatal error: [m[Kstd::chrono::seconds: No such file or directory
+[1.455s]     3 | #include[01;31m[K<std::chrono::seconds>[m[K
+[1.455s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.455s] compilation terminated.
+[1.459s] make[2]: *** [CMakeFiles/simple_publisher.dir/build.make:63: CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o] Error 1
+[1.459s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/simple_publisher.dir/all] Error 2
+[1.460s] make: *** [Makefile:141: all] Error 2
+[1.462s] Invoked command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples -- -j8 -l8

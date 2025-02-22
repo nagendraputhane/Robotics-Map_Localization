@@ -1,0 +1,53 @@
+[0.023s] Invoking command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/galactic /usr/bin/cmake --build /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples -- -j8 -l8
+[0.053s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.077s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.148s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.212s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.220s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.323s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.357s] -- Found FastRTPS: /opt/ros/galactic/include  
+[0.450s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.526s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.531s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.557s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.560s] -- Looking for pthread.h
+[0.631s] -- Looking for pthread.h - found
+[0.632s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.704s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.704s] -- Looking for pthread_create in pthreads
+[0.768s] -- Looking for pthread_create in pthreads - not found
+[0.768s] -- Looking for pthread_create in pthread
+[0.840s] -- Looking for pthread_create in pthread - found
+[0.841s] -- Found Threads: TRUE  
+[1.030s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[1.105s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.106s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.106s] -- Configured cppcheck include dirs: 
+[1.106s] -- Configured cppcheck exclude dirs and/or files: 
+[1.107s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.108s] -- Configured cpplint exclude dirs and/or files: 
+[1.108s] -- Added test 'lint_cmake' to check CMake code style
+[1.109s] -- Added test 'uncrustify' to check C / C++ code style
+[1.109s] -- Configured uncrustify additional arguments: 
+[1.110s] -- Added test 'xmllint' to check XML markup files
+[1.112s] -- Configuring done
+[1.120s] -- Generating done
+[1.126s] -- Build files have been written to: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples
+[1.150s] [35m[1mScanning dependencies of target simple_publisher[0m
+[1.235s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o[0m
+[3.010s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krcpcpp[m[K’ does not name a type; did you mean ‘[01m[Krclcpp[m[K’?
+[3.010s]    19 |         [01;31m[Krcpcpp[m[K::TimerBase::SharedPtr timer_;
+[3.010s]       |         [01;31m[K^~~~~~[m[K
+[3.010s]       |         [32m[Krclcpp[m[K
+[3.013s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:[m[K In constructor ‘[01m[KSimplePublisher::SimplePublisher()[m[K’:
+[3.013s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:11:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer[m[K’ was not declared in this scope; did you mean ‘[01m[Ktime[m[K’?
+[3.013s]    11 |             [01;31m[Ktimer[m[K = create_wall_timer(1s, std::bind(&SimplePublisher::timerCallback, this));
+[3.013s]       |             [01;31m[K^~~~~[m[K
+[3.014s]       |             [32m[Ktime[m[K
+[3.014s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:11:71:[m[K [01;31m[Kerror: [m[K‘[01m[KtimerCallback[m[K’ is not a member of ‘[01m[KSimplePublisher[m[K’
+[3.014s]    11 |             timer = create_wall_timer(1s, std::bind(&SimplePublisher::[01;31m[KtimerCallback[m[K, this));
+[3.014s]       |                                                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[4.115s] make[2]: *** [CMakeFiles/simple_publisher.dir/build.make:63: CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o] Error 1
+[4.115s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/simple_publisher.dir/all] Error 2
+[4.115s] make: *** [Makefile:141: all] Error 2
+[4.117s] Invoked command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/galactic /usr/bin/cmake --build /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples -- -j8 -l8

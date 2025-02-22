@@ -1,0 +1,26 @@
+[0.022s] Invoking command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/galactic /usr/bin/cmake --build /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples -- -j8 -l8
+[0.067s] [35m[1mScanning dependencies of target simple_publisher[0m
+[0.094s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o[0m
+[4.294s] [100%] [32m[1mLinking CXX executable simple_publisher[0m
+[4.524s] [100%] Built target simple_publisher
+[4.536s] Invoked command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/galactic /usr/bin/cmake --build /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples -- -j8 -l8
+[4.550s] Invoking command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/galactic /usr/bin/cmake --install /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples
+[4.557s] -- Install configuration: ""
+[4.558s] -- Installing: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_publisher
+[4.558s] -- Set runtime path of "/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_publisher" to ""
+[4.559s] -- Installing: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/bumperbot_cpp_examples
+[4.559s] -- Installing: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/bumperbot_cpp_examples
+[4.559s] -- Up-to-date: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.sh
+[4.559s] -- Installing: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.dsv
+[4.559s] -- Up-to-date: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.sh
+[4.559s] -- Installing: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.dsv
+[4.559s] -- Up-to-date: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.bash
+[4.560s] -- Up-to-date: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.sh
+[4.560s] -- Up-to-date: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.zsh
+[4.560s] -- Installing: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.dsv
+[4.560s] -- Installing: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.dsv
+[4.560s] -- Up-to-date: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/ament_index/resource_index/packages/bumperbot_cpp_examples
+[4.560s] -- Up-to-date: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig.cmake
+[4.560s] -- Up-to-date: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig-version.cmake
+[4.560s] -- Installing: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.xml
+[4.563s] Invoked command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/galactic /usr/bin/cmake --install /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples

@@ -1,0 +1,46 @@
+[0.026s] Invoking command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples -- -j8 -l8
+[0.091s] [35m[1mScanning dependencies of target simple_publisher[0m
+[0.126s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o[0m
+[2.415s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:25:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[2.415s]    25 | }
+[2.415s]       |  [01;31m[K^[m[K
+[2.415s]       |  [32m[K;[m[K
+[2.419s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:[m[K In constructor ‘[01m[KSimplePublisher::SimplePublisher()[m[K’:
+[2.419s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:10:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_[m[K’?
+[2.419s]    10 |         [01;31m[Ktimer[m[K+ create_wall_timer(1s, std::bind(&SimplePublisher::timer_callback, this)); //bind timer_callback of &SimplePublisher to the parameters of create_wall_timer and pass the object ('this') to indicate which object's timer_callback to call.
+[2.420s]       |         [01;31m[K^~~~~[m[K
+[2.420s]       |         [32m[Ktimer_[m[K
+[2.437s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:[m[K In member function ‘[01m[Kvoid SimplePublisher::timer_callback()[m[K’:
+[2.437s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:22:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope; did you mean ‘[01m[Kmessaage[m[K’?
+[2.437s]    22 |             [01;31m[Kmessage[m[K.data = "Hello ROS 2 - counter: " + std::to_string(counter_++);
+[2.437s]       |             [01;31m[K^~~~~~~[m[K
+[2.437s]       |             [32m[Kmessaage[m[K
+[2.438s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.438s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:28:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::init[m[K’?
+[2.438s]    28 |     rclcpp:[01;31m[Kinit[m[K(argc, argv); //without calling rclcpp:init(), the node will not be able to communicate with the ROS 2 middleware.
+[2.438s]       |            [01;31m[K^~~~[m[K
+[2.438s]       |            [32m[Krclcpp::init[m[K
+[2.438s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:36[m[K,
+[2.438s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[2.438s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[2.438s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[2.439s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.439s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[2.439s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[2.439s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.439s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[2.439s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[2.439s]                  from [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:1[m[K:
+[2.439s] [01m[K/opt/ros/galactic/include/rclcpp/utilities.hpp:56:1:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::init[m[K’ declared here
+[2.439s]    56 | [01;36m[Kinit[m[K(int argc, char const * const argv[], const InitOptions & init_options = InitOptions());
+[2.439s]       | [01;36m[K^~~~[m[K
+[2.442s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:30:5:[m[K [01;31m[Kerror: [m[Kduplicate label ‘[01m[Krclcpp[m[K’
+[2.442s]    30 |     [01;31m[Krclcpp[m[K:spin(node); //spin() is a blocking call that will keep the node alive until a SIGINT signal is received.
+[2.442s]       |     [01;31m[K^~~~~~[m[K
+[2.443s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_publisher.cpp:28:5:[m[K [01;35m[Kwarning: [m[Klabel ‘[01m[Krclcpp[m[K’ defined but not used [[01;35m[K-Wunused-label[m[K]
+[2.443s]    28 |     [01;35m[Krclcpp[m[K:init(argc, argv); //without calling rclcpp:init(), the node will not be able to communicate with the ROS 2 middleware.
+[2.443s]       |     [01;35m[K^~~~~~[m[K
+[3.735s] make[2]: *** [CMakeFiles/simple_publisher.dir/build.make:63: CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o] Error 1
+[3.736s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/simple_publisher.dir/all] Error 2
+[3.736s] make: *** [Makefile:141: all] Error 2
+[3.739s] Invoked command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples -- -j8 -l8

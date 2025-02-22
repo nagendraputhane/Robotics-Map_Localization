@@ -1,0 +1,127 @@
+[0.021s] Invoking command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples -- -j8 -l8
+[0.290s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.290s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.291s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.291s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.292s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.310s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.379s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.382s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.405s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.568s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[0.633s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.634s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.635s] -- Configured cppcheck include dirs: 
+[0.635s] -- Configured cppcheck exclude dirs and/or files: 
+[0.635s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.635s] -- Configured cpplint exclude dirs and/or files: 
+[0.636s] -- Added test 'lint_cmake' to check CMake code style
+[0.637s] -- Added test 'uncrustify' to check C / C++ code style
+[0.637s] -- Configured uncrustify additional arguments: 
+[0.637s] -- Added test 'xmllint' to check XML markup files
+[0.639s] -- Configuring done
+[0.651s] -- Generating done
+[0.656s] -- Build files have been written to: /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples
+[0.683s] [35m[1mScanning dependencies of target simple_subscriber[0m
+[0.684s] [35m[1mScanning dependencies of target simple_publisher[0m
+[0.714s] [ 25%] [32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o[0m
+[0.720s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o[0m
+[2.500s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:8:28:[m[K [01;31m[Kerror: [m[Ktemporary of non-literal type ‘[01m[Krclcpp::Node[m[K’ in a constant expression
+[2.500s]     8 |         SimpleSubscriber : [01;31m[KNode("simple_subscriber")[m[K {
+[2.500s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.500s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.500s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[2.500s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[2.500s]                  from [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:1[m[K:
+[2.500s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:77:7:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::Node[m[K’ is not literal because:
+[2.500s]    77 | class [01;36m[KNode[m[K : public std::enable_shared_from_this<Node>
+[2.500s]       |       [01;36m[K^~~~[m[K
+[2.500s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:77:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::Node[m[K’ has a non-trivial destructor
+[2.500s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:8:54:[m[K [01;31m[Kerror: [m[Kdefault member initializer for unnamed bit-field
+[2.500s]     8 |         SimpleSubscriber : Node("simple_subscriber") [01;31m[K{[m[K
+[2.500s]       |                                                      [01;31m[K^[m[K
+[2.501s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:17:1:[m[K [01;31m[Kerror: [m[Kname ‘[01m[KSimpleSubscriber[m[K’ has incomplete type
+[2.501s]    17 | [01;31m[K}[m[K;
+[2.501s]       | [01;31m[K^[m[K
+[2.501s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:19:26:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kchar** argc[m[K’
+[2.501s]    19 | int main(int argc, [01;31m[Kchar* argc[][m[K) {
+[2.501s]       |                    [01;31m[K~~~~~~^~~~~~[m[K
+[2.501s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:19:14:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kint argc[m[K’
+[2.501s]    19 | int main([01;36m[Kint argc[m[K, char* argc[]) {
+[2.501s]       |          [01;36m[K~~~~^~~~[m[K
+[2.501s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:25:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[2.501s]    25 | [01;31m[K}[m[K
+[2.501s]       | [01;31m[K^[m[K
+[2.501s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:6:39:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.501s]     6 | class SimpleSubscriber : rclcpp::Node [01;36m[K{[m[K
+[2.502s]       |                                       [01;36m[K^[m[K
+[2.502s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:[m[K In member function ‘[01m[Kint SimpleSubscriber::main(int)[m[K’:
+[2.502s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:20:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kargv[m[K’ was not declared in this scope; did you mean ‘[01m[Kargc[m[K’?
+[2.502s]    20 |     rclcpp::init(argc, [01;31m[Kargv[m[K);
+[2.502s]       |                        [01;31m[K^~~~[m[K
+[2.502s]       |                        [32m[Kargc[m[K
+[2.505s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:22:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin(std::shared_ptr<SimpleSubscriber>&)[m[K’
+[2.505s]    22 |     rclcpp::spin(node[01;31m[K)[m[K;
+[2.505s]       |                      [01;31m[K^[m[K
+[2.505s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[2.505s]                  from [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:1[m[K:
+[2.505s] [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr)[m[K’
+[2.505s]    45 | [01;36m[Kspin[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+[2.505s]       | [01;36m[K^~~~[m[K
+[2.505s] [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:45:60:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[KSimpleSubscriber[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Krclcpp::node_interfaces::NodeBaseInterface[m[K>[m[K’
+[2.505s]    45 | spin([01;36m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr[m[K);
+[2.506s]       |      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[2.506s] [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::Node::SharedPtr)[m[K’
+[2.506s]    49 | [01;36m[Kspin[m[K(rclcpp::Node::SharedPtr node_ptr);
+[2.506s]       | [01;36m[K^~~~[m[K
+[2.506s] [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:49:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[KSimpleSubscriber[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Krclcpp::Node[m[K>[m[K’
+[2.506s]    49 | spin([01;36m[Krclcpp::Node::SharedPtr node_ptr[m[K);
+[2.506s]       |      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[2.506s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:[m[K At global scope:
+[2.506s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:25:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[2.506s]    25 | [01;31m[K}[m[K
+[2.506s]       | [01;31m[K^[m[K
+[3.131s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33[m[K,
+[3.132s]                  from [01m[K/usr/include/c++/9/bits/allocator.h:46[m[K,
+[3.132s]                  from [01m[K/usr/include/c++/9/memory:63[m[K,
+[3.132s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:154[m[K,
+[3.132s]                  from [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:1[m[K:
+[3.132s] /usr/include/c++/9/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = SimpleSubscriber; _Args = {}; _Tp = SimpleSubscriber][m[K’:
+[3.132s] [01m[K/usr/include/c++/9/bits/alloc_traits.h:483:4:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = SimpleSubscriber; _Args = {}; _Tp = SimpleSubscriber; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<SimpleSubscriber>][m[K’
+[3.132s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = SimpleSubscriber; _Alloc = std::allocator<SimpleSubscriber>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.132s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = SimpleSubscriber; _Alloc = std::allocator<SimpleSubscriber>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.132s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<SimpleSubscriber>; _Args = {}; _Tp = SimpleSubscriber; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.132s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:359:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<SimpleSubscriber>; _Args = {}; _Tp = SimpleSubscriber][m[K’
+[3.132s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:701:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = SimpleSubscriber; _Alloc = std::allocator<SimpleSubscriber>; _Args = {}][m[K’
+[3.132s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:717:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = SimpleSubscriber; _Args = {}][m[K’
+[3.132s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:21:52:[m[K   required from here
+[3.132s] [01m[K/usr/include/c++/9/ext/new_allocator.h:146:4:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KSimpleSubscriber::SimpleSubscriber()[m[K’
+[3.133s]   146 |  { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[3.133s]       |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.133s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:6:7:[m[K [01;36m[Knote: [m[K‘[01m[KSimpleSubscriber::SimpleSubscriber()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[3.133s]     6 | class [01;36m[KSimpleSubscriber[m[K : rclcpp::Node {
+[3.133s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[3.133s] [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:6:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[3.133s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.133s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.133s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.134s]                  from [01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:1[m[K:
+[3.134s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:1302:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[3.134s]  1302 |   [01;36m[KNode[m[K(
+[3.134s]       |   [01;36m[K^~~~[m[K
+[3.134s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:1302:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[3.134s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[3.134s]   101 |   explicit [01;36m[KNode[m[K(
+[3.134s]       |            [01;36m[K^~~~[m[K
+[3.134s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[3.134s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[3.134s]    89 |   explicit [01;36m[KNode[m[K(
+[3.134s]       |            [01;36m[K^~~~[m[K
+[3.134s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[3.205s] make[2]: *** [CMakeFiles/simple_subscriber.dir/build.make:63: CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o] Error 1
+[3.205s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/simple_subscriber.dir/all] Error 2
+[3.206s] make[1]: *** Waiting for unfinished jobs....
+[4.934s] [ 75%] [32m[1mLinking CXX executable simple_publisher[0m
+[5.128s] [ 75%] Built target simple_publisher
+[5.129s] make: *** [Makefile:141: all] Error 2
+[5.131s] Invoked command in '/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/build/bumperbot_cpp_examples -- -j8 -l8

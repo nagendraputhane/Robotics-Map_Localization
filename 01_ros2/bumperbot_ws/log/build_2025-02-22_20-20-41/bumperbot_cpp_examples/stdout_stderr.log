@@ -1,0 +1,14 @@
+[35m[1mScanning dependencies of target simple_subscriber[0m
+[ 50%] Built target simple_publisher
+[ 75%] [32mBuilding CXX object CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o[0m
+[01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:[m[K In constructor ‘[01m[KSimpleSubscriber::SimpleSubscriber()[m[K’:
+[01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:9:119:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSimpleSubscriber::msgCallback()[m[K’
+    9 |             sub_ = create_subscription<std_msgs::msg::String>("chatter", 10, std::bind(&SimpleSubscriber::msgCallback([01;31m[K)[m[K, this, _1)); //ROS2 uses an executor with create_subscription() to notify the message to the callback function.
+      |                                                                                                                       [01;31m[K^[m[K
+[01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:14:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid SimpleSubscriber::msgCallback(const String&) const[m[K’
+   14 |         void [01;36m[KmsgCallback[m[K(const std_msgs::msg::String &msg) const { // parameter const = function will not modify the contents of msg. // msgCallback is a constant member function. This means that the function does not modify any member variables of the class. //&msg so it need not make a copy of msg again.
+      |              [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/sdn/ntp/Robotics-Odometry_Control/01_ros2/bumperbot_ws/src/bumperbot_cpp_examples/src/simple_subscriber.cpp:14:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/simple_subscriber.dir/build.make:63: CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/simple_subscriber.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
