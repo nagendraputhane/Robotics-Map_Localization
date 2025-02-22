@@ -102,4 +102,4 @@ ROS organizes software into packages, which can include code for robot control, 
 - **Overlay:**
   - A separate workspace (often called the `workspace` folder) where you develop your custom robot code.
   - **Shadowing Concept:** If a package exists in both the underlay and the overlay, the version in the overlay takes precedence. This allows you to customize or extend functionality without modifying the base ROS distribution.
-
+  
