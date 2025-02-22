@@ -17,3 +17,8 @@ The xacro file describes the bumperbot with the following key components:
 - **Caster Wheels:**  
   - Two caster wheels are defined: `caster_front_link` and `caster_rear_link`.
   - They are attached via fixed joints to the `base_link`.
+
+  ![BumperBot Visual](images/bumperbot.png)
+
+
+  ![BumperBot Visual](images/bumpergrid.png)
